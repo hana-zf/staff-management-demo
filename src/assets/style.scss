@@ -1,0 +1,79 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+html,
+body,
+#app {
+    font-family: "Roboto", sans-serif !important;
+    width: 100vw;
+    height: 100vh;
+}
+
+.logo {
+    height: auto;
+    width: 200px;
+}
+
+td {
+    text-align: center;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+html {
+    height: -webkit-fill-available;
+  }
+  
+main {
+    height: 100vh;
+    height: -webkit-fill-available;
+    max-height: 100vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+  
+.dropdown-toggle { 
+  outline: 0; 
+}
+
+.scrollarea {
+    overflow-y: auto;
+}
+
+img {
+  width: 16px;
+  height: 16px;
+}
+
+.action-btn button {
+    margin: 0px 5px;
+}
+
+.add-btn button {
+    margin: 0px 5px;
+}
+
+.router-link {
+    color: #000;
+    text-decoration: none;
+}
+
+
+
