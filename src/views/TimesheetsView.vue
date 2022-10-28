@@ -1,6 +1,6 @@
 <template>
-    <div class="timesheets-container">
-        <sidebar></sidebar>
+    <div class="timesheets-container d-flex">
+        <Sidebar1/>
         <div class="container text-center m-5">
             <h1> {{ text }}</h1>
         </div>
@@ -8,11 +8,11 @@
 </template>
 
 <script>
-import Sidebar from '@/components/Sidebar.vue';
+import Sidebar1 from '@/components/Sidebar1.vue';
     export default {
         name: 'timesheets',
         components: {
-            "sidebar": Sidebar,
+            Sidebar1
         },
         data () {
             return {

@@ -124,7 +124,7 @@
 
 <script>
 export default {
-    name: 'sidebar'
+    name: 'Sidebar1'
 }
 </script>
 

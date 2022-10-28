@@ -1,6 +1,6 @@
 <template>
-    <div class="devices-container">
-        <sidebar></sidebar>
+    <div class="devices-container d-flex">
+        <Sidebar1 />
         <div class="container text-center m-5">
             <h1> {{ text }}</h1>
         </div>
@@ -8,16 +8,16 @@
 </template>
 
 <script>
-import Sidebar from '@/components/Sidebar.vue';
-    export default {
-        name: 'devices',
-        components: {
-            "sidebar": Sidebar,
-        },
-        data () {
-            return {
-                text: 'This is devices page!'
-            }
+import Sidebar1 from '@/components/Sidebar1.vue';
+export default {
+    name: 'devices',
+    components: {
+        Sidebar1
+    },
+    data() {
+        return {
+            text: 'This is devices page!'
         }
     }
+}
 </script>

@@ -9,7 +9,9 @@
 import Sidebar1 from '@/components/Sidebar1.vue';
 
 export default {
-    components: { Sidebar1 }
+    components: {
+        Sidebar1
+    }
 }
 </script>
 
