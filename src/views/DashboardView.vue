@@ -1,6 +1,6 @@
 <template>
 
-    <div class="dashboard-container d-flex">
+    <div class="dashboard-container">
         <Sidebar1 />
         <div class=" dashboard-title align-items-center p-5">
             <div class="card offset-3" style="width: 90vh; height: auto;">

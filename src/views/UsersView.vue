@@ -1,5 +1,5 @@
 <template>
-    <div class="users-container d-flex">
+    <div class="users-container">
         <Sidebar1/>
         <div class="container text-center m-5">
             <h1> {{ text }}</h1>

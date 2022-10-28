@@ -1,5 +1,5 @@
 <template>
-    <div class="payslips-container d-flex">
+    <div class="payslips-container">
         <Sidebar1/>
         <div class="container text-center m-5">
             <h1> {{ text }}</h1>

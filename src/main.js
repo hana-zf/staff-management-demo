@@ -5,8 +5,8 @@ import '@/assets/style.scss'
 import '@popperjs/core'
 import 'bootstrap'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faChartSimple, faGears, faCircleUser, faUsers, faClockFour, faMoneyBill, faBars } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon, FontAwesomeLayersText } from '@fortawesome/vue-fontawesome'
+import { faChartSimple, faGears, faCircleUser, faUsers, faClockFour, faMoneyBill, faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
 
 
 
@@ -17,6 +17,7 @@ library.add(faUsers)
 library.add(faClockFour)
 library.add(faMoneyBill)
 library.add(faBars)
+library.add(faXmark)
 
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)

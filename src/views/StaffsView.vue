@@ -1,18 +1,19 @@
 <template>
-  <div class="staffs-container d-flex">
+  <div class="staffs-container">
     <Sidebar1 />
 
     <div class="card m-3">
       <div class="card-header">
         Staff List
       </div>
-      <div class="m-3 add-btn">
-        <router-link :to="{ name: 'addStaff' }">
-          <button class="btn btn-sm btn-success">Add staffs</button>
-        </router-link>
-      </div>
+      <!-- <div class="m-3 add-btn">
+        
+      </div> -->
       <div class="d-flex align-items-center">
         <div class="action-btn m-3 flex-grow-1 flex-wrap">
+          <router-link :to="{ name: 'addStaff' }">
+            <button class="btn btn-sm btn-success">Add staffs</button>
+          </router-link>
           <button class="btn btn-sm btn-primary">Select All</button>
           <button class="btn btn-sm btn-primary">Deselect All</button>
           <button class="btn btn-sm btn-light">Copy</button>
@@ -25,8 +26,8 @@
         </div>
         <div class="d-flex align-items-center">
           <label class="" for="search"></label>
-          <input type="text" id="search" v-model="searchValue" class="form-control font-control-sm mx-5"
-            placeholder="Searching: " />
+          <input type="text" id="search" v-model="searchValue" class="form-control mx-5"
+            placeholder="Search: " />
         </div>
       </div>
 
