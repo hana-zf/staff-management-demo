@@ -3,7 +3,7 @@
     <div class="dashboard-container">
         <Sidebar1 />
         <div class=" dashboard-title align-items-center p-5">
-            <div class="card offset-3" style="width: 90vh; height: auto;">
+            <div class="card offset-3 mt-5" style="width: 90vh; height: auto;">
                 <div class="card-header">
                     {{ title }}
                 </div>

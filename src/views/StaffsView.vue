@@ -2,13 +2,10 @@
   <div class="staffs-container">
     <Sidebar1 />
 
-    <div class="card m-3">
+    <div class="card mx-3 mb-5 staff-card">
       <div class="card-header">
         Staff List
       </div>
-      <!-- <div class="m-3 add-btn">
-        
-      </div> -->
       <div class="d-flex align-items-center">
         <div class="action-btn m-3 flex-grow-1 flex-wrap">
           <router-link :to="{ name: 'addStaff' }">
@@ -26,8 +23,7 @@
         </div>
         <div class="d-flex align-items-center">
           <label class="" for="search"></label>
-          <input type="text" id="search" v-model="searchValue" class="form-control mx-5"
-            placeholder="Search: " />
+          <input type="text" id="search" v-model="searchValue" class="form-control mx-5" placeholder="Search: " />
         </div>
       </div>
 
