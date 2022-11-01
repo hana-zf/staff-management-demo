@@ -96,7 +96,9 @@ export default {
     return {
       staffs: [],
       name: '',
-      searchValue: ''
+      searchValue: '',
+      isActive: false,
+      hasError: false,
     };
   },
 
@@ -159,15 +161,16 @@ export default {
   computed: {
     filteredList() {
       let arr = this.dummyArray();
+
       const filterArray = arr.filter((staff) => // to filter what we search
         staff.name
           .toLowerCase()
           .includes
           (this.searchValue.trim().toLowerCase()))
-
+        
       if (filterArray.length > 0) { // to return list of names after user empty the search bar
-        arr = filterArray
-      }
+          arr = filterArray
+        }
       return arr
     }
   },
