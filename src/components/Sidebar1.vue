@@ -16,7 +16,7 @@
         <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1"
             id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel" style="width: 280px;">
             <div class="offcanvas-header">
-                <img src="../assets/images/text.jpeg" class="logo" alt="Logo">
+                <img src="../assets/images/text.jpeg" :to="{ name: 'dashboard' }" class="logo" alt="Logo">
                 <button class="btn mx-1" data-bs-dismiss="offcanvas" aria-label="Close">
                     <font-awesome-icon icon="fa-solid fa-xmark" />
                 </button>

@@ -2,10 +2,13 @@
   <div class="staffs-container">
     <Sidebar1 />
 
-    <div class="card mx-3 mb-5 staff-card">
+    <div class="card m-3">
       <div class="card-header">
         Staff List
       </div>
+      <!-- <div class="m-3 add-btn">
+        
+      </div> -->
       <div class="d-flex align-items-center">
         <div class="action-btn m-3 flex-grow-1 flex-wrap">
           <router-link :to="{ name: 'addStaff' }">
@@ -23,7 +26,8 @@
         </div>
         <div class="d-flex align-items-center">
           <label class="" for="search"></label>
-          <input type="text" id="search" v-model="searchValue" class="form-control mx-5" placeholder="Search: " />
+          <input type="text" id="search" v-model="searchValue" class="form-control mx-5"
+            placeholder="Search: " />
         </div>
       </div>
 
@@ -70,7 +74,7 @@
                   <router-link :to="{ name: 'showStaff' }"><button class="btn btn-sm btn-primary my-1">View</button>
                   </router-link>
                   <button class="btn btn-sm btn-success my-1">Edit</button>
-                  <button class="btn btn-sm btn-danger my-1">Delete</button>
+                  <button class="btn btn-sm btn-danger my-1" @click="deleteStaff">Delete</button>
                 </div>
               </td>
             </tr>
@@ -96,9 +100,7 @@ export default {
     return {
       staffs: [],
       name: '',
-      searchValue: '',
-      isActive: false,
-      hasError: false,
+      searchValue: ''
     };
   },
 
@@ -137,7 +139,7 @@ export default {
       return postition
     },
 
-    dummyArray() {
+    staffArray() {
       let arrays = [];
       for (let i = 0; i < 30; i++) {
         arrays.push({
@@ -161,22 +163,21 @@ export default {
   computed: {
     filteredList() {
       let arr = this.dummyArray();
-
       const filterArray = arr.filter((staff) => // to filter what we search
         staff.name
           .toLowerCase()
           .includes
           (this.searchValue.trim().toLowerCase()))
-        
+
       if (filterArray.length > 0) { // to return list of names after user empty the search bar
-          arr = filterArray
-        }
+        arr = filterArray
+      }
       return arr
     }
   },
 
   mounted() {
-    this.staffs = this.dummyArray();
+    this.staffs = this.staffArray();
   },
 };
 </script>
