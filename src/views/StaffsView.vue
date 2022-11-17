@@ -162,7 +162,7 @@ export default {
 
   computed: {
     filteredList() {
-      let arr = this.dummyArray();
+      let arr = this.staffArray();
       const filterArray = arr.filter((staff) => // to filter what we search
         staff.name
           .toLowerCase()
